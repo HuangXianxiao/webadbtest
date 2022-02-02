@@ -1,0 +1,38 @@
+{
+    "name": "@yume-chan/adb-credential-web",
+    "version": "0.0.10",
+    "description": "Credential Store for `@yume-chan/adb` using Web LocalStorage API.",
+    "keywords": [
+        "adb"
+    ],
+    "license": "MIT",
+    "author": {
+        "name": "Simon Chan",
+        "email": "cnsimonchan@live.com",
+        "url": "https://chensi.moe/blog"
+    },
+    "homepage": "https://github.com/yume-chan/ya-webadb/tree/master/libraries/adb-credential-web#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yume-chan/ya-webadb.git",
+        "directory": "libraries/adb-credential-web"
+    },
+    "bugs": {
+        "url": "https://github.com/yume-chan/ya-webadb/issues"
+    },
+    "type": "module",
+    "module": "esm/index.js",
+    "scripts": {
+        "build": "build-ts-package",
+        "build:watch": "build-ts-package --incremental",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "typescript": "^4.5.4",
+        "@yume-chan/ts-package-builder": "^1.0.0"
+    },
+    "dependencies": {
+        "@yume-chan/adb": "^0.0.10",
+        "tslib": "^2.3.1"
+    }
+}
